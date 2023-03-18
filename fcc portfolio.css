@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+html {
+	  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+  color: white;
+  background-color: #012b4c;
+}
+
+#header {
+  width:100vw;
+  height: 100px;
+  display: flex;
+  justify-content: right;
+  background-color: #e3ca56;
+  position: fixed;
+}
+
+#navbar {
+  width:30%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  #navbar {
+    width: 50%;
+  }
+}
+
+nav p {
+  font-size: 25px;
+  color: #012b4c;
+}
+
+@media screen and (max-width: 900px) {
+  nav p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #navbar {
+    width: 80%;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  color: #012b4c;
+}
+
+#welcome-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#welcome-section h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+#welcome-section p {
+  font-size: 25px;
+  margin: 0;
+  color: #e3ca56;
+}
+
+#projects {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #024c7d;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
+#projects h2 {
+  font-weight: bold;
+  font-size: 50px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+#works {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-tile  {
+  width: 400px;
+  height: 450px;
+  background: url(666.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.project-tile.two {
+  background: url(111.png);
+  background-size: cover;
+}
+
+.project-tile.three {
+  background: url(555.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.project-tile.four {
+  background: url(444.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.project-tile.five {
+  background: url(333.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.project-tile.six {
+  background: url(222.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.project-tile .desc {
+  background-color: #14213d;
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 0px 5px 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.desc span {
+  color: yellow;
+  visibility: hidden;
+}
+
+.project-tile:hover .desc span {
+  visibility: visible;
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+.desc p {
+  margin: auto;
+  padding: 10px;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  color:white;
+  background-color: #14213d;
+  border: 0;
+  border-radius: 5px;
+}
+
+#contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  flex-direction: column;
+}
+
+hr {
+   width: 100vw;
+   height: 2px;
+   border: 2px solid #e3ca56;
+}
+
+#contact h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  padding-top: 250px;
+}
+
+@media screen and (max-width: 900px) {
+  #contact h1 {
+    padding-top: 50px;
+  }
+}
+
+#coffee {
+  font-size: 25px;
+  font-style: italic;
+  margin: 0;
+  text-align: center;
+}
+
+#social-links{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 70%;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: Pacifico, sans-serif;
+  flex-wrap: wrap;
+}
+
+.social {
+  padding: 10px;
+}
+
+.social:hover {
+  animation: jump 1.5s;
+}
+
+
+@keyframes jump {
+  0% { transform: translateY(0px) rotateY(0deg);}
+  100% { transform: translateY(-10px) rotateY(360deg);}
+}
+
+
+#ze-foot {
+  display: flex;
+  font-size: 20px;
+  padding: 0px 15px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+  #ze-foot {
+    flex-direction: column;
+  }
+}
