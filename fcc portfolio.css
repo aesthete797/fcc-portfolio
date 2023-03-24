@@ -17,7 +17,7 @@ body {
   width:100vw;
   height: 100px;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   background-color: #e3ca56;
   position: fixed;
 }
@@ -26,32 +26,20 @@ body {
   width:30%;
   height: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding-right: 40px;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 992px) {
   #navbar {
-    width: 50%;
+    width: 60%;
   }
 }
 
 nav p {
-  font-size: 25px;
+  font-size: 30px;
   color: #012b4c;
-}
-
-@media screen and (max-width: 900px) {
-  nav p {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #navbar {
-    width: 80%;
-  }
 }
 
 nav a {
@@ -192,8 +180,8 @@ button {
 }
 
 #contact {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   font-size: 20px;
@@ -211,13 +199,8 @@ hr {
   font-weight: bold;
   margin: 0;
   text-align: center;
-  padding-top: 250px;
-}
-
-@media screen and (max-width: 900px) {
-  #contact h1 {
-    padding-top: 50px;
-  }
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #coffee {
@@ -225,6 +208,7 @@ hr {
   font-style: italic;
   margin: 0;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 #social-links{
@@ -259,10 +243,4 @@ hr {
   font-size: 20px;
   padding: 0px 15px;
   justify-content: space-between;
-}
-
-@media screen and (max-width: 900px) {
-  #ze-foot {
-    flex-direction: column;
-  }
 }
